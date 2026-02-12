@@ -1,5 +1,5 @@
 import { Card, CardHeader, Avatar, IconButton, CardContent, Box, Typography, CardActions, Button, Divider } from "@mui/material";
-import { MoreHoriz as MoreHorizIcon, ThumbUp as ThumbUpIcon, Comment as CommentIcon, Share as ShareIcon, Send as SendIcon, FiberManualRecord as FiberManualRecordIcon } from "@mui/icons-material";
+import { MoreHoriz as MoreHorizIcon, ThumbUp as ThumbUpIcon, Comment as CommentIcon, Share as ShareIcon, Send as SendIcon, FiberManualRecord as FiberManualRecordIcon, Autorenew } from "@mui/icons-material";
 
 
 const FeedPost = ({ post }) => (
@@ -54,7 +54,7 @@ const FeedPost = ({ post }) => (
         <CardActions sx={{ justifyContent: 'space-around' }}>
             <Button startIcon={<ThumbUpIcon />} color="inherit" size="small">Like</Button>
             <Button startIcon={<CommentIcon />} color="inherit" size="small">Comment</Button>
-            <Button startIcon={<ShareIcon />} color="inherit" size="small">Share</Button>
+            <Button startIcon={<Autorenew />} color="inherit" size="small">Repost</Button>
             <Button startIcon={<SendIcon />} color="inherit" size="small">Send</Button>
         </CardActions>
     </Card>

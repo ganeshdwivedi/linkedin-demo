@@ -67,7 +67,7 @@ export default function App() {
     <Box sx={{ bgcolor: '#f3f2ef', minHeight: '100vh' }}>
       <Navbar />
 
-      <Container maxWidth="lg" sx={{ pt: 10, pb: 4 }}>
+      <Container maxWidth="lg" sx={{ pt: { md: 10, xs: 4 }, pb: 4 }}>
         <Box sx={{ mb: 3, display: "grid", gridTemplateColumns: { xs: "1fr", sm: "1fr 2fr", md: "1fr 2fr 1.5fr", lg: "1fr 2fr 1fr" }, gap: 2, display: { xs: "block", md: "grid" } }}>
 
           {/* Left Column - Profile (Hidden on XS) */}

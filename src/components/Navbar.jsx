@@ -1,6 +1,7 @@
 import { AppBar, Container, Toolbar, Box, TextField, InputAdornment, Stack, Avatar, Typography, IconButton } from "@mui/material";
-import { Search as SearchIcon, Home as HomeIcon, People as PeopleIcon, Work as WorkIcon, Message as MessageIcon, Notifications as NotificationsIcon, ArrowDropDown, Apps } from "@mui/icons-material";
+import { Search as SearchIcon, Home as HomeIcon, People as PeopleIcon, Work as WorkIcon, Message as MessageIcon, Notifications as NotificationsIcon, ArrowDropDown, Apps, } from "@mui/icons-material";
 import React from "react";
+
 
 const NavIcon = ({ icon, label, active }) => (
   <Box sx={{
@@ -28,7 +29,7 @@ const Navbar = () => (
           <Box sx={{ display: 'flex', alignItems: 'center', mr: 2 }}>
             <Box sx={{ color: 'primary.main', mr: 1, display: 'flex', alignItems: 'center' }}>
               {/* Logo */}
-              <Box sx={{ width: 34, height: 34, bgcolor: '#0a66c2', borderRadius: 0.5, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 'bold', fontSize: 22 }}>
+              <Box sx={{ width: 34, height: 34, bgcolor: '#0a66c2', borderRadius: 0.5, display: { xs: "none", md: "flex" }, alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 'bold', fontSize: 22 }}>
                 in
               </Box>
             </Box>
