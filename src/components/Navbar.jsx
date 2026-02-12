@@ -22,7 +22,7 @@ const NavIcon = ({ icon, label, active }) => (
 
 const Navbar = () => (
   <>
-    <AppBar position="sticky" color="default" elevation={0} sx={{ borderBottom: 1, borderColor: 'divider', bgcolor: 'background.paper', position: { xs: 'unset', md: 'fixed' } }}>
+    <AppBar position="sticky" color="default" elevation={0} sx={{ borderBottom: 1, borderColor: 'divider', bgcolor: 'background.paper', position: { xs: 'unset', md: 'fixed' }, top: 0, width: '100%', zIndex: 1100 }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters sx={{ minHeight: { xs: 52, md: 52 } }}>
           <Box sx={{ display: 'flex', alignItems: 'center', mr: 2 }}>
@@ -148,6 +148,7 @@ const Navbar = () => (
     </AppBar>
   </>
 );
+
 
 export default Navbar
 
