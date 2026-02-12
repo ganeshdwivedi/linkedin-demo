@@ -1,7 +1,7 @@
 import { Card, CardContent, Avatar, Box, Typography, Divider } from "@mui/material";
 
 
-const IdentityCard = () => (
+const IdentityCard = ({ currentUser }) => (
     <Card sx={{ mb: 2, overflow: 'visible' }}>
         {/* Banner */}
         <Box sx={{ height: 60, bgcolor: 'grey.300', borderRadius: '4px 4px 0 0' }} />
